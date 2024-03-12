@@ -1,0 +1,452 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vxh;
+}
+
+/*
+    BARA NAVEGACION DE TODO EL PORTAL
+*/
+
+.a-nav:hover {
+    transform: scale(1.1);
+    color: #6c6c77;
+}
+
+.div-nav {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: .625rem;
+    box-shadow: 0 6px 8px -6px #000;
+    width: 49%;
+}
+
+
+.div-nav ul li ul{
+    width: 11.875rem;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 5.625rem;
+    visibility: hidden;
+    opacity: 1;
+    z-index: 10;
+    box-shadow: 6px 6px 10px -6px #000;
+    transition: all 300ms ease;
+}
+
+.div-nav ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    background-color: #fff;
+    top: 3.125rem;
+}
+
+.div-nav ul li ul li a { 
+    display: block;
+    width: 8.75rem;
+    margin-top: .625rem;
+    padding: .375rem;
+    transition: all 300ms ease;
+}
+
+.div-nav ul li ul li a:hover {
+    color: #6c6c77;
+    background-color: #e2e0e0;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: .875rem;
+    box-shadow: 6px 6px 10px -6px #000;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-nav a {
+    color: #000;
+    margin-left: 15px;
+}
+
+.img-header {
+    margin: .3125rem;
+    height: 4.375rem;
+}
+ /* 
+    MAIN CONTACTO
+ */
+
+ .red-asterisk {
+    color: #ff0000;
+}
+
+.div-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.div-main section {
+    margin: .625rem 0;
+    width: 23.75rem;
+}
+
+.div-main section h1 {  
+    margin: .48rem 1rem ;
+}
+
+.section-form p {
+    margin: 1rem 0;
+    text-align: start;
+    text-transform: initial;
+}
+
+.section-form p a {
+    color: #000;
+}
+
+.section-form div form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-contact-nombre label {
+        margin: 15px 0 0 5px;
+}
+
+.form div input {
+    border: none;
+    border-left: .0625rem solid #000;
+    border-right: .0625rem solid #000;
+    border-bottom: .0625rem solid #000;
+    box-shadow: 0 6px 8px -4px #000;
+    height: 1.50rem;
+    width: 90%;
+}
+
+.form div input:focus {
+    outline: none;
+    border: none;
+    background: #ededed;
+}
+
+.div-contact-telefono label {
+    margin: 15px 0 0 5px;
+    text-transform: initial;
+}
+
+.div-contact-email label {
+    margin: 15px 0 0 5px;
+}
+
+.div-contact-commit label{
+    margin: 15px 0 0 5px;
+}
+
+.div-contact-commit textarea {
+    border: none;
+    border-left: .0625rem solid #000;
+    border-right: .0625rem solid #000;
+    border-bottom: .0625rem solid #000;
+    box-shadow: 0 6px 8px -4px #000;
+    height: 7.50rem;
+    width: 90%;
+}
+
+.div-contact-commit textarea:focus {
+    outline: none;
+    border: none;
+    background: #ededed;
+}
+
+.boton-enviar {
+    margin: 1rem 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 6px 8px -4px #000;
+}
+
+.section-dos div h2{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-transform: initial;
+}
+
+.section-dos div p {
+    margin: 0.5rem 0;
+}
+
+.div-direction {
+    border-bottom: 2px solid #000;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contact-icono-telefono {
+    margin: 2rem 0;
+}
+
+.contact-icono-telefono p span img{
+    width: 1.5625rem;
+    margin-right: 1rem;
+}
+
+.div-horario {
+    text-transform: initial;
+}
+
+.contact-icono-telefono {
+    margin: 2rem 1rem;
+}
+
+.contact-icono-correo {
+    margin: 2rem 1rem;
+}
+
+.contact-icono-telefono p {
+    display: flex;
+    align-items: center;
+}
+
+.contact-icono-correo p {
+    display: flex;
+    align-items: center;
+}
+
+.contact-icono-correo p a {
+    color: #000;
+}
+
+.contact-icono-correo p span img {
+    width: 25px;
+    margin-right: 1rem;
+}
+
+/*
+    MAIN POLITICAS PRIVACIDAD
+*/
+
+.section-politica-privacidad {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 37.5rem;
+    padding:  3rem 0;
+    margin: auto;
+}
+
+.h1-politica-privacidad {
+    font-size: 2rem;
+    margin: .5rem 0;
+    align-self: center;
+}
+
+.h2-tratamiento {
+    margin: 1rem .1875rem;
+    font-size: 1.3rem;
+}
+
+.parrafo-tratamiento-datos {
+    margin: .625rem 0;
+}
+
+.p-tratamiento {
+    text-align: justify;
+    margin: .625rem 0;
+    font-size: 0.9rem;
+}
+
+.nombre {
+    margin-top: 2rem;
+    margin-left: .5rem;
+    font-size: 1.2rem;
+}
+
+.cargo {
+    margin-left: .5rem;
+    font-size: 1.1rem;
+}
+
+.imagen-fondo {
+    background-image: url("../assets/img/Fondo.jpg");
+    width: 100%;
+    background-size: 150%;
+    background-repeat: repeat;
+}
+
+/*
+    MAIN INDEX
+*/
+
+.img-principal-index{
+    width: 100%;
+}
+
+.texto-inicio {
+    display: flex;
+    font-size: 5.25rem;
+    justify-content: center;
+    padding: 3rem;
+    align-items: center;
+}
+
+.banner-div {
+    background-color: #000;
+}
+ 
+.banner-scrolling { 
+    width: 100%;
+
+}
+
+/*
+    estilos generales
+*/
+
+.catalogo-inicio a article img {
+    width: 12.5rem;
+    height: 23rem;
+
+}
+
+.catalogo-inicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.section-catalogo-inicio {
+    width: 100%;
+}
+
+.catalogo-inicio a article {
+    text-align: center;
+    margin-bottom: 2.25rem;
+    color: #000;
+}
+
+/*
+    MAIN PRODUCTOS
+*/
+
+.img-banner {
+    width: 100%;
+}
+
+/*
+    INICIO FOOTER
+*/
+footer {
+    background-color: #2D2D2D;
+    display: flex;
+    margin-top: auto;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-footer h3 {
+    color: #fff;
+    margin: .3125rem;
+    text-align: center;
+    min-width: 14.375rem;
+}
+
+.div-footer {
+    width: 25rem;
+}
+
+.div-footer ul {
+    margin: .4375rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.facebook {
+    height: 1.875rem;
+}
+
+.instagram {
+    height: 1.875rem;
+}
+
+.twitter {
+    height: 1.875rem;
+}
+
+.whatsapp {
+    height: 1.875rem;
+}
+
+.bancolombia {
+    display: flex;
+    height: 1.25rem;
+}
+
+.pse {
+    display: flex;
+    height: 1.25rem;
+}
+
+.masterCard {
+    display: flex;
+    height: 1.25rem;
+}
+
+.visa {
+    display: flex;
+    height: 1.25rem;
+}
+
+.nequi {
+    display: flex;
+    height: 1.25rem;
+}
+
+.div-img-footer {
+    background-color: #ffffff;
+    border-radius: 50%;   
+}
+
+.noxus-footer {
+    margin: .625rem;
+    height: 2.1875rem;   
+}
+
+
+@media (max-width: 1040px) {
+
+    .div-main  section {
+        height: 100%;
+        width: 20rem;
+     }
+
+}
+
+@media (max-width: 700px) {
+
+    .div-main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
