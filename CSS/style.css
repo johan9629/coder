@@ -360,7 +360,6 @@ footer {
     background-color: #2D2D2D;
     display: flex;
     margin-top: auto;
-    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -437,18 +436,84 @@ footer {
 
 @media (max-width: 1040px) {
 
+    /*
+        MAIN CONTACT
+    */
+
     .div-main  section {
-        height: 100%;
         width: 20rem;
      }
+
+    /*
+        FOOTER
+    */
+
+    .noxus-footer {
+        display: none;
+    }
+    
+    footer {
+        justify-content: space-evenly;
+    }
+
+    .div-footer {
+        width: 20rem;
+    }
+
+    .facebook {
+        height: 1.5rem;
+    }
+
+    .instagram {
+        height: 1.5rem;
+    }
+
+    .twitter {
+        height: 1.5rem;
+    }
+
+    .whatsapp {
+        height: 1.5rem;
+    }
+
+    .bancolombia {
+        display: flex;
+        height: 1rem;
+    }
+
+    .pse {
+        display: flex;
+        height: 1rem;
+    }
+
+    .masterCard {
+        display: flex;
+        height: 1rem;
+    }
+
+    .visa {
+        display: flex;
+        height: 1rem;
+    }
+
+    .nequi {
+        display: flex;
+        height: 1rem;
+    }
+
+
 }
 
 @media (max-width: 768px) {
+
+    /*
+        HEADER
+    */
  
     .div-nav {
         box-shadow: none;
         display: grid;
-        grid-template-columns: 200px 1fr;
+        grid-template-columns:1fr;
         grid-template-rows: 1fr 1fr;
         width: 100%;
         height: 100%;
@@ -456,35 +521,74 @@ footer {
         align-items: center;
     }
 
+    .div-nav-primero {
+        grid-column: 1/3;
+    }
+
+    .div-nav-segundo {
+        grid-column: 1/3;
+    
+    }
+
     nav {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 1fr);
         justify-items: center;
     }
 
-    .a-inicio {
-        grid-column: 1/3;
-    }
     .menu-desplegable {
         display: grid;
         width: 1.75rem;
         grid-row: 1/2;
         grid-column: 1/2;
+        justify-self: start;
+        margin-left: 3.125rem;
     }
 
     .img-header {
+
         grid-column: 2/3;
         grid-row: 1/2;
-        align-items: end;
+        justify-self: start;
     }
-
 }
 
 @media (max-width: 700px) {
+
+    /*
+        MAIN CONTACT
+    */
 
     .div-main{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
+
+     /*
+        FOOTER
+    */
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .div-footer-primero {
+        grid-row: 2/3;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 360px) {
+
+    /*
+        MAIN CONTACT
+    */
+    .div-main  section {
+        width: 15rem;
+     }
 }
