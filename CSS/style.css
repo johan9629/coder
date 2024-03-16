@@ -10,17 +10,11 @@ body {
     padding: 0px;
     font-family: sans-serif;
     text-transform: capitalize;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vxh;
 }
 
 /*
-    BARA NAVEGACION DE TODO EL PORTAL
+    BARRA NAVEGACION DE TODO EL PORTAL
 */
-.menu-desplegable {
-    display: none;
-}
 
 .a-nav:hover {
     transform: scale(1.1);
@@ -380,7 +374,6 @@ footer {
     margin: .4375rem;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 
 .facebook {
@@ -477,27 +470,22 @@ footer {
     }
 
     .bancolombia {
-        display: flex;
         height: 1rem;
     }
 
     .pse {
-        display: flex;
         height: 1rem;
     }
 
     .masterCard {
-        display: flex;
         height: 1rem;
     }
 
     .visa {
-        display: flex;
         height: 1rem;
     }
 
     .nequi {
-        display: flex;
         height: 1rem;
     }
 
@@ -509,8 +497,17 @@ footer {
     /*
         HEADER
     */
- 
-    .div-nav {
+
+    .div-nav ul li ul{
+        top: 7.625rem;
+    }
+    
+    .div-nav ul li:hover ul {
+        top: 7rem;
+        right: 4rem;
+    }
+
+    .div-nav{
         box-shadow: none;
         display: grid;
         grid-template-columns:1fr;
@@ -519,42 +516,44 @@ footer {
         height: 100%;
         justify-items: center;
         align-items: center;
-    }
-
-    .div-nav-primero {
         grid-column: 1/3;
-    }
-
-    .div-nav-segundo {
-        grid-column: 1/3;
-    
     }
 
     nav {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         justify-items: center;
     }
 
-    .menu-desplegable {
-        display: grid;
-        width: 1.75rem;
-        grid-row: 1/2;
-        grid-column: 1/2;
-        justify-self: start;
-        margin-left: 3.125rem;
-    }
-
     .img-header {
-
-        grid-column: 2/3;
-        grid-row: 1/2;
-        justify-self: start;
+        grid-column: 1/2;
+        grid-row: 1/2;  
+        justify-self: center;
     }
+
+    /*
+        MAIN POLITICAS  
+    */
+
+    .section-politica-privacidad {
+        width: 80%;
+    }
+
 }
 
 @media (max-width: 700px) {
+
+    /*
+        MAIN INDEX
+    */
+    .div-nav ul li:focus ul {
+        right: 0.5rem;
+    }
+    
+    .texto-inicio {
+        font-size: 3.5rem;
+    }
 
     /*
         MAIN CONTACT
@@ -583,7 +582,26 @@ footer {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 445px) {
+
+    /*
+        HEADER
+    */
+
+    .div-nav ul li ul {
+        width: 8.75rem;
+    }
+    
+    .div-nav ul li:focus ul {
+        right: 0;
+    }
+    /*
+        MAIN INDEX
+    */
+
+    .texto-inicio {
+        font-size: 2.5rem;
+    }
 
     /*
         MAIN CONTACT
@@ -591,4 +609,33 @@ footer {
     .div-main  section {
         width: 15rem;
      }
+
+      /*
+        MAIN POLITICAS  
+    */
+
+    .section-politica-privacidad {
+        width: 18rem;
+    }
+
+    .h1-politica-privacidad {
+        font-size: 1.5rem;
+    }
+
+    .h2-tratamiento {
+        font-size: 1.1rem;
+    }
+
+    .p-tratamiento {
+        font-size: 0.8rem;
+    }
+
+    .nombre {
+        font-size: 1rem;
+    }
+
+    .cargo {
+        font-size: 0.9rem;
+    }
+
 }
