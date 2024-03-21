@@ -15,6 +15,9 @@ body {
 /*
     BARRA NAVEGACION DE TODO EL PORTAL
 */
+a {
+    text-decoration: none;
+}
 
 .a-nav:hover {
     transform: scale(1.1);
@@ -27,6 +30,16 @@ body {
     padding-bottom: .625rem;
     box-shadow: 0 6px 8px -6px #000;
     width: 49%;
+}
+
+.div-nav-primero ul {
+    padding: 0;
+    margin: 0;
+}
+
+.div-nav-primero ul li {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -87,6 +100,11 @@ nav {
     MAIN CONTACTO
  */
 
+ 
+#contact {
+    height:  84.1vh;
+}
+
  .red-asterisk {
     color: #ff0000;
 }
@@ -123,7 +141,7 @@ nav {
 }
 
 .div-contact-nombre label {
-        margin: 15px 0 0 5px;
+    font-size: .875rem;
 }
 
 .form div input {
@@ -136,23 +154,17 @@ nav {
     width: 90%;
 }
 
-.form div input:focus {
-    outline: none;
-    border: none;
-    background: #ededed;
-}
-
 .div-contact-telefono label {
-    margin: 15px 0 0 5px;
     text-transform: initial;
+    font-size: .875rem;
 }
 
 .div-contact-email label {
-    margin: 15px 0 0 5px;
+    font-size: .875rem;
 }
 
 .div-contact-commit label{
-    margin: 15px 0 0 5px;
+    font-size: .875rem;
 }
 
 .div-contact-commit textarea {
@@ -164,11 +176,8 @@ nav {
     height: 7.50rem;
     width: 90%;
 }
-
-.div-contact-commit textarea:focus {
-    outline: none;
-    border: none;
-    background: #ededed;
+#floatingTextarea {
+    height: 6.25rem;
 }
 
 .boton-enviar {
@@ -343,8 +352,16 @@ nav {
     MAIN PRODUCTOS
 */
 
+#carouselProductos div div img, #carouselProductos1 div div img {
+    height: 920px;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    padding: 1.875rem 0 3.125rem 0 ;
+}
+
 .img-banner {
     width: 100%;
+    padding-bottom: 1.875rem;
 }
 
 /*
@@ -490,6 +507,13 @@ footer {
     }
 
 
+}
+
+@media (max-height: 730px) {
+
+    #contact {
+        height:  100vh;
+    }
 }
 
 @media (max-width: 768px) {
