@@ -1,0 +1,17 @@
+/*MAIN INDEX*/
+.banner-div {
+    background-color: $negro;
+    .banner-scrolling { 
+        width: 100%;
+    }
+    .img-principal-index{
+        @extend .banner-scrolling
+    }
+}
+
+.texto-inicio {
+    @include flex (none,center,none,none);
+    font-size: 5.25rem;
+    padding: 3rem;
+    align-items: center;
+}

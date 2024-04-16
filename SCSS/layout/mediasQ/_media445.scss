@@ -1,0 +1,57 @@
+@media (max-width: 445px) {
+
+    /*
+        HEADER
+    */
+
+    .div-nav ul li ul {
+        width: 8.75rem;
+    }
+    
+    .div-nav ul li:focus ul {
+        right: 0;
+    }
+    /*
+        MAIN INDEX
+    */
+
+    .texto-inicio {
+        font-size: 2.5rem;
+    }
+
+    /*
+        MAIN CONTACT
+    */
+    .div-main  section {
+        width: 15rem;
+    }
+
+    /*
+        MAIN POLITICAS  
+    */
+
+    .section-politica-privacidad {
+        width: 18rem;
+    }
+
+    .h1-politica-privacidad {
+        font-size: 1.5rem;
+    }
+
+    .h2-tratamiento {
+        font-size: 1.1rem;
+    }
+
+    .p-tratamiento {
+        font-size: 0.8rem;
+    }
+
+    .nombre {
+        font-size: 1rem;
+    }
+
+    .cargo {
+        font-size: 0.9rem;
+    }
+
+}

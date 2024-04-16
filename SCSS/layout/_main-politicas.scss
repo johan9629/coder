@@ -1,0 +1,40 @@
+/*POLITICAS*/
+.imagen-fondo {
+    background-image: url("../assets/img/Fondo.jpg");
+    width: 100%;
+    background-size: 150%;
+    background-repeat: repeat;
+    .section-politica-privacidad {
+        @include flex (column, none,none,none);
+        align-items: start;
+        width: 37.5rem;
+        padding:  3rem 0;
+        margin: auto;
+        h1 {
+            font-size: 2rem;
+            margin: .5rem 0;
+            align-self: center;
+        }
+        h2 {
+            margin: 1rem .1875rem;
+            font-size: 1.3rem;
+        }
+        div {
+            margin: .625rem 0;
+            .p-tratamiento {
+                text-align: justify;
+                margin: .625rem 0;
+                font-size: 0.9rem;
+            }
+        }
+        .nombre {
+            margin-top: 2rem;
+            margin-left: .5rem;
+            font-size: 1.2rem;
+        }
+        .cargo {
+            margin-left: .5rem;
+            font-size: 1.1rem;
+        }
+    }
+}

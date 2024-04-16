@@ -1,0 +1,65 @@
+@media (max-width: 1040px) {
+
+    /*
+        MAIN CONTACT
+    */
+
+    .div-main  section {
+        width: 20rem;
+    }
+
+    /*
+        FOOTER
+    */
+
+    .noxus-footer {
+        display: none;
+    }
+    
+    footer {
+        justify-content: space-evenly;
+    }
+
+    .div-footer {
+        width: 20rem;
+    }
+
+    .instagram {
+        height: 1.5rem;
+    }
+
+    .facebook {
+        @extend .instagram;
+    }
+
+    .twitter {
+        @extend .instagram;
+    }
+
+    .whatsapp {
+        @extend .instagram;
+    }
+
+    .pse {
+        height: 1rem;
+        @extend .pse;
+    }
+
+    .bancolombia {
+        @extend .pse;
+    }
+
+    .masterCard {
+        @extend .pse;
+    }
+
+    .visa {
+        @extend .pse;
+    }
+
+    .nequi {
+        @extend .pse;
+    }
+
+
+}

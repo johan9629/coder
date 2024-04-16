@@ -1,0 +1,32 @@
+
+/*  Utilities */
+@import "./utilities/mapas";
+@import "./utilities/mixins";
+@import "./utilities/variables";
+
+/*  Base */
+@import "./base/reset";
+@import "./base/general";
+
+/*  Layout */
+@import "./layout/header";
+@import "./layout/main-conctacto";
+@import "./layout/main-politicas";
+@import "./layout/main-index";
+@import "./layout/main-productos";
+@import "./layout/footer";
+
+
+/*  Componentes */
+@import "./components/bootstrap";
+
+/*Media Querys*/
+@import "./layout/mediasQ/media1040";
+@import "./layout/mediasQ/media768";
+@import "./layout/mediasQ/media730";
+@import "./layout/mediasQ/media700";
+@import "./layout/mediasQ/media445";
+
+
+
+

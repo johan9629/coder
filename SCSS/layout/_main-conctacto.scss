@@ -1,0 +1,270 @@
+#contact {
+    height: 84.6vh;
+}
+
+.red-asterisk {
+    color: #ff0000;
+}
+
+.div-main {
+    @include grid ((1fr 1fr),none,none,none);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    section {
+        margin: .625rem 0;
+        width: 23.75rem;
+
+        h1 {
+            margin: 0.48rem 1rem;
+        }
+    }
+}
+
+.section-form {
+    p {
+        margin: 1rem 0;
+        text-align: start;
+        text-transform: initial;
+
+        a {
+            color: #000;
+        }
+    }
+
+    div form div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.div-contact-nombre label {
+    font-size: .875rem;
+}
+
+.form div input {
+    border: none;
+    border-left: .0625rem solid #000;
+    border-right: .0625rem solid #000;
+    border-bottom: .0625rem solid #000;
+    box-shadow: 0 6px 8px -4px #000;
+    height: 1.50rem;
+    width: 90%;
+}
+
+.div-contact-telefono label {
+    text-transform: initial;
+    font-size: .875rem;
+}
+
+.div-contact-email label {
+    font-size: .875rem;
+}
+
+.div-contact-commit {
+    label {
+        font-size: .875rem;
+    }
+
+    textarea {
+        border: none;
+        border-left: .0625rem solid #000;
+        border-right: .0625rem solid #000;
+        border-bottom: .0625rem solid #000;
+        box-shadow: 0 6px 8px -4px #000;
+        height: 7.50rem;
+        width: 90%;
+    }
+}
+
+#floatingTextarea {
+    height: 6.25rem;
+}
+
+.boton-enviar {
+    margin: 1.5rem 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 6px 8px -4px #000;
+}
+
+.section-dos div {
+    h2 {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        text-transform: initial;
+    }
+
+    p {
+        margin: 0.5rem 0;
+    }
+}
+
+.div-direction {
+    border-bottom: 2px solid #000;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contact-icono-telefono {
+    margin: 2rem 0;
+
+    p span img {
+        width: 1.5625rem;
+        margin-right: 1rem;
+    }
+}
+
+.div-horario {
+    text-transform: initial;
+}
+
+.contact-icono-telefono,
+.contact-icono-correo {
+    margin: 2rem 1rem;
+}
+
+.contact-icono-telefono p {
+    display: flex;
+    align-items: center;
+}
+
+.contact-icono-correo p {
+    display: flex;
+    align-items: center;
+
+    a {
+        color: #000;
+    }
+
+    span img {
+        width: 25px;
+        margin-right: 1rem;
+    }
+}
+
+/*CONTACTO
+#contact{
+    height:  84.1vh;
+    .div-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        section {
+            margin: .625rem 0;
+            width: 23.75rem;
+            h1 {
+                margin: .48rem 1rem;
+            }
+        }
+        .section-form {
+            p {
+                margin: 1rem 0;
+                text-align: start;
+                text-transform: initial;
+                a {
+                    color: $negro;
+                }
+            }
+            div {
+                .form {
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+                label {
+                    font-size: .875rem;
+                    text-transform: initial;
+                }
+                input {
+                    border: none;
+                    border-left: .0625rem solid $negro;
+                    border-right: .0625rem solid $negro;
+                    border-bottom: .0625rem solid $negro;
+                    box-shadow: 0 6px 8px -4px $negro;
+                    height: 1.50rem;
+                    width: 90%;
+                }
+                textarea{
+                    border: none;
+                    border-left: .0625rem solid $negro;
+                    border-right: .0625rem solid $negro;
+                    border-bottom: .0625rem solid $negro;
+                    box-shadow: 0 6px 8px -4px $negro;
+                    height: 7.50rem;
+                    width: 90%;
+                }
+                #floatingTextarea {
+                    height: 6.25rem;
+                }
+                button {
+                    margin: 1.5rem 0;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    box-shadow: 0 6px 8px -4px $negro;
+                }
+                .red-asterisk {
+                    color: #ff0000;
+                }
+            }
+        }
+        .section-dos {
+            h2 {
+                margin-top: 3rem;
+                margin-bottom: 2rem;
+                text-transform: initial;
+            }
+            p {
+                margin: 0.5rem 0;
+            }
+            .contact-icono-telefono {
+                margin: 2rem 1rem;
+                p {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        img {
+                            width: 1.5625rem;
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+            .contact-icono-correo {
+                margin: 2rem 1rem;
+                p {
+                    display: flex;
+                    align-items: center;
+                    a{
+                        color: $negro;
+                    }
+                    span { 
+                        img {
+                            width: 25px;
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+            .div-direction {
+                border-bottom: 2px solid $negro;
+                margin-bottom: 2rem;
+                padding-bottom: 2rem;
+            }
+            .div-horario {
+                text-transform: initial;
+            }
+
+        }
+    }
+}
+
+*/

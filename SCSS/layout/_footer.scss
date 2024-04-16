@@ -1,0 +1,63 @@
+/*INICIO FOOTER*/ 
+footer {
+    background-color: #2D2D2D;
+    display: flex;
+    margin-top: auto;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .div-footer {
+        width: 25rem;
+        h3 {
+        color: #fff;
+        margin: .3125rem;
+        text-align: center;
+        min-width: 14.375rem;
+        }
+        ul {
+            margin: .4375rem;
+            display: flex;
+            justify-content: space-evenly;
+
+            .facebook {
+                height: 1.875rem;
+            }
+            .instagram {
+                @extend .facebook;
+            }
+            .twitter {
+                @extend .facebook;
+            }
+            .whatsapp {
+                @extend .facebook;
+            }
+            .bancolombia {
+                display: flex;
+                height: 1.25rem;
+            }
+            .pse {
+                @extend .bancolombia;
+            }
+            .masterCard {
+                @extend .bancolombia;
+            }
+            .visa {
+                @extend .bancolombia;
+            }
+            .nequi {
+                @extend .bancolombia;
+            }
+        }
+    }
+    .div-img-footer {
+        background-color: #ffffff;
+        border-radius: 50%;   
+        .noxus-footer {
+            margin: .625rem;
+            height: 2.1875rem;   
+        }
+    }
+}
+
+
+

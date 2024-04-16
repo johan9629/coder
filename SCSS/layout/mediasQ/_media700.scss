@@ -1,0 +1,39 @@
+@media (max-width: 700px) {
+
+    /*
+        MAIN INDEX
+    */
+    .div-nav ul li:focus ul {
+        right: 0.5rem;
+    }
+    
+    .texto-inicio {
+        font-size: 3.5rem;
+    }
+
+    /*
+        MAIN CONTACT
+    */
+
+    .div-main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    /*
+        FOOTER
+    */
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .div-footer-primero {
+        grid-row: 2/3;
+        padding: 15px 0;
+    }
+}
