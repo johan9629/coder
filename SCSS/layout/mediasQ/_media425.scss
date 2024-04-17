@@ -1,4 +1,4 @@
-@media (max-width: 445px) {
+@media (max-width: 425px) {
 
     /*
         HEADER
@@ -53,5 +53,21 @@
     .cargo {
         font-size: 0.9rem;
     }
+    /*footer*/
+    footer .div-footer {
+        width: 300px;
+        ul {
+            padding: 0;
+            margin: 0;
+            width: 300px;
+        }
+    }
 
+    footer .div-footer {
+        h3 {
+            width: 300px;
+        }
+    }
+    
+    
 }

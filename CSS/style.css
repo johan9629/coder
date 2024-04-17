@@ -16,85 +16,6 @@ a {
   text-decoration: none; }
 
 /*  Layout */
-/*nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .img-header {
-        margin: .3125rem;
-        height: 4.375rem;
-    }
-    .div-nav {
-        display: flex;
-        justify-content: space-around;
-        padding-bottom: .625rem;
-        box-shadow: 0 6px 8px -6px $negro;
-        width: 49%;
-        a {
-            color: $negro;
-            margin-left: 15px;
-        }
-        ul {
-            li {
-                &:hover ul {
-                    visibility: visible;
-                    opacity: 1;
-                    background-color: #fff;
-                    top: 3.125rem;
-                }
-                ul {
-                    width: 11.875rem;
-                    display: flex;
-                    flex-direction: column;
-                    background: #fff;
-                    position: absolute;
-                    top: 5.625rem;
-                    visibility: hidden;
-                    opacity: 1;
-                    z-index: 10;
-                    box-shadow: 6px 6px 10px -6px $negro;
-                    transition: all 300ms ease;
-                    li {
-                        a {
-                            display: block;
-                            width: 8.75rem;
-                            margin-top: .625rem;
-                            padding: .375rem;
-                            transition: all 300ms ease;
-                            &:hover {
-                                color: #6c6c77;
-                                background-color: #e2e0e0;
-                                transform: scale(1.1);
-                                padding-left: 30px;
-                                font-size: .875rem;
-                                box-shadow: 6px 6px 10px -6px $negro;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-.div-nav-primero ul {
-    padding: 0;
-    margin: 0;
-    li {
-        display: flex;
-        align-items: center;
-    }
-}
-
-.a-nav:hover {
-    transform: scale(1.1);
-    color: #6c6c77;
-}
-*/
-/*
-    BARRA NAVEGACION DE TODO EL PORTAL
-*/
 .a-nav:hover {
   transform: scale(1.1);
   color: #6c6c77; }
@@ -273,127 +194,6 @@ nav {
     width: 25px;
     margin-right: 1rem; }
 
-/*CONTACTO
-#contact{
-    height:  84.1vh;
-    .div-main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        align-items: center;
-        section {
-            margin: .625rem 0;
-            width: 23.75rem;
-            h1 {
-                margin: .48rem 1rem;
-            }
-        }
-        .section-form {
-            p {
-                margin: 1rem 0;
-                text-align: start;
-                text-transform: initial;
-                a {
-                    color: $negro;
-                }
-            }
-            div {
-                .form {
-                    div {
-                        display: flex;
-                        flex-direction: column;
-                    }
-                }
-                label {
-                    font-size: .875rem;
-                    text-transform: initial;
-                }
-                input {
-                    border: none;
-                    border-left: .0625rem solid $negro;
-                    border-right: .0625rem solid $negro;
-                    border-bottom: .0625rem solid $negro;
-                    box-shadow: 0 6px 8px -4px $negro;
-                    height: 1.50rem;
-                    width: 90%;
-                }
-                textarea{
-                    border: none;
-                    border-left: .0625rem solid $negro;
-                    border-right: .0625rem solid $negro;
-                    border-bottom: .0625rem solid $negro;
-                    box-shadow: 0 6px 8px -4px $negro;
-                    height: 7.50rem;
-                    width: 90%;
-                }
-                #floatingTextarea {
-                    height: 6.25rem;
-                }
-                button {
-                    margin: 1.5rem 0;
-                    padding: 10px 20px;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    box-shadow: 0 6px 8px -4px $negro;
-                }
-                .red-asterisk {
-                    color: #ff0000;
-                }
-            }
-        }
-        .section-dos {
-            h2 {
-                margin-top: 3rem;
-                margin-bottom: 2rem;
-                text-transform: initial;
-            }
-            p {
-                margin: 0.5rem 0;
-            }
-            .contact-icono-telefono {
-                margin: 2rem 1rem;
-                p {
-                    display: flex;
-                    align-items: center;
-                    span {
-                        img {
-                            width: 1.5625rem;
-                            margin-right: 1rem;
-                        }
-                    }
-                }
-            }
-            .contact-icono-correo {
-                margin: 2rem 1rem;
-                p {
-                    display: flex;
-                    align-items: center;
-                    a{
-                        color: $negro;
-                    }
-                    span { 
-                        img {
-                            width: 25px;
-                            margin-right: 1rem;
-                        }
-                    }
-                }
-            }
-            .div-direction {
-                border-bottom: 2px solid $negro;
-                margin-bottom: 2rem;
-                padding-bottom: 2rem;
-            }
-            .div-horario {
-                text-transform: initial;
-            }
-
-        }
-    }
-}
-
-*/
 /*POLITICAS*/
 .imagen-fondo {
   background-image: url("../assets/img/Fondo.jpg");
@@ -403,9 +203,9 @@ nav {
   .imagen-fondo .section-politica-privacidad {
     display: flex;
     flex-direction: column;
-    justify-content: none;
-    align-content: none;
-    flex-wrap: none;
+    justify-content: start;
+    align-content: start;
+    flex-wrap: nowrap;
     align-items: start;
     width: 37.5rem;
     padding: 3rem 0;
@@ -557,7 +357,7 @@ footer {
       grid-column: 1/2;
       grid-row: 1/2;
       justify-self: center; }
-  .section-politica-privacidad {
+  .imagen-fondo .section-politica-privacidad {
     width: 80%; } }
 
 @media (max-height: 730px) {
@@ -578,6 +378,8 @@ footer {
   .div-main {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr; }
+  #contact {
+    height: 100%; }
   /*
         FOOTER
     */
@@ -591,7 +393,7 @@ footer {
     grid-row: 2/3;
     padding: 15px 0; } }
 
-@media (max-width: 445px) {
+@media (max-width: 425px) {
   /*
         HEADER
     */
@@ -623,4 +425,13 @@ footer {
   .nombre {
     font-size: 1rem; }
   .cargo {
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+  /*footer*/
+  footer .div-footer {
+    width: 300px; }
+    footer .div-footer ul {
+      padding: 0;
+      margin: 0;
+      width: 300px; }
+  footer .div-footer h3 {
+    width: 300px; } }

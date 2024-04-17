@@ -5,7 +5,7 @@
     background-size: 150%;
     background-repeat: repeat;
     .section-politica-privacidad {
-        @include flex (column, none,none,none);
+        @include flex (column, start,start,nowrap);
         align-items: start;
         width: 37.5rem;
         padding:  3rem 0;
